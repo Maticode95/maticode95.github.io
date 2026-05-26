@@ -37,36 +37,40 @@ const skills = [
 
 const projects = [
   {
-    title: "Portfolio Full Stack",
-    kicker: "Proyecto principal",
+    title: "Soft Jobs API",
+    kicker: "Backend con autenticación",
     description:
-      "Sitio personal construido con React y Vite a partir de un diseño exportado desde Stitch. El foco está en performance, accesibilidad, estructura de componentes y deploy simple.",
-    tags: ["React", "TypeScript", "Vite", "CSS"],
-    icon: "web_asset",
+      "API REST para registro y login de usuarios con contraseñas hasheadas, JWT, rutas protegidas y conexión a PostgreSQL. Es el proyecto que mejor muestra fundamentos backend aplicables a un equipo real.",
+    tags: ["Node.js", "Express", "JWT", "Bcrypt", "PostgreSQL"],
+    icon: "lock",
+    repoUrl: "https://github.com/Maticode95/Soft-Jobs-Mati",
   },
   {
-    title: "TaskFlow API",
-    kicker: "Backend practice",
+    title: "Tienda de Joyas API",
+    kicker: "API + base de datos",
     description:
-      "API REST para gestión de tareas con autenticación, middlewares, manejo de errores y una estructura pensada para crecer sin perder claridad.",
-    tags: ["Node.js", "Express", "JWT", "PostgreSQL"],
-    icon: "api",
+      "Servicio Express para clientes y catálogo de joyas, con operaciones CRUD, filtros, middlewares de reporte y consultas parametrizadas a PostgreSQL. Comunica criterio para modelar endpoints y datos.",
+    tags: ["Express", "PostgreSQL", "CRUD", "Middlewares"],
+    icon: "database",
+    repoUrl: "https://github.com/Maticode95/Tienda-de-joyas-Mati",
   },
   {
-    title: "E-Commerce Analytics UI",
-    kicker: "Frontend dashboard",
+    title: "Pizzería Mamma Mía",
+    kicker: "Frontend React",
     description:
-      "Dashboard responsive para practicar estados, filtros y visualización de información de negocio con una interfaz oscura y profesional.",
-    tags: ["React", "Data UI", "Charts", "UX"],
-    icon: "dashboard",
+      "Aplicación React con navegación, carrito, contexto global y rutas protegidas para login/perfil. Sirve para mostrar manejo de estado, experiencia de usuario y estructura de SPA.",
+    tags: ["React", "React Router", "Context API", "Vite"],
+    icon: "local_pizza",
+    repoUrl: "https://github.com/Maticode95/Hito-8--JWT-Mati",
   },
   {
-    title: "Learning Lab",
-    kicker: "Mejora continua",
+    title: "Cafetería Nanacao API",
+    kicker: "Testing de API",
     description:
-      "Repositorio de ejercicios, pruebas técnicas y mini proyectos donde documento decisiones, trade-offs y aprendizajes de desarrollo web.",
-    tags: ["GitHub", "Docs", "Testing", "Clean Code"],
+      "API REST pequeña pero valiosa para entrevistas porque incluye pruebas automatizadas con Jest y Supertest. Demuestra que no solo construyes endpoints: también validas comportamiento.",
+    tags: ["Express", "Jest", "Supertest", "REST API"],
     icon: "science",
+    repoUrl: "https://github.com/Maticode95/Cafeteria-Nanacao-API-REST",
   },
 ];
 
@@ -261,6 +265,12 @@ function Projects() {
               {project.tags.map((tag) => (
                 <span key={tag}>{tag}</span>
               ))}
+            </div>
+            <div className="project-actions">
+              <a href={project.repoUrl} target="_blank" rel="noreferrer">
+                Ver código
+                <Icon name="open_in_new" />
+              </a>
             </div>
           </article>
         ))}
