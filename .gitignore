@@ -1,0 +1,9 @@
+node_modules
+dist
+stitch-export
+.DS_Store
+.env
+.env.*
+*.local
+*.tsbuildinfo
+vite.config.js
