@@ -40,7 +40,7 @@ const projects = [
     title: "Soft Jobs API",
     kicker: "Backend con autenticación",
     description:
-      "API REST para registro y login de usuarios con contraseñas hasheadas, JWT, rutas protegidas y conexión a PostgreSQL. Es el proyecto que mejor muestra fundamentos backend aplicables a un equipo real.",
+      "Backend REST orientado a autenticación de usuarios. Permite evaluar manejo de seguridad básica, hashing de contraseñas, JWT, rutas protegidas, variables de entorno y consultas a PostgreSQL.",
     tags: ["Node.js", "Express", "JWT", "Bcrypt", "PostgreSQL"],
     icon: "lock",
     repoUrl: "https://github.com/Maticode95/Soft-Jobs-Mati",
@@ -49,7 +49,7 @@ const projects = [
     title: "Tienda de Joyas API",
     kicker: "API + base de datos",
     description:
-      "Servicio Express para clientes y catálogo de joyas, con operaciones CRUD, filtros, middlewares de reporte y consultas parametrizadas a PostgreSQL. Comunica criterio para modelar endpoints y datos.",
+      "API de catálogo y clientes con CRUD, filtros y middlewares. Es útil para revisar criterio al diseñar endpoints, separar consultas SQL, validar entradas y trabajar con datos relacionales.",
     tags: ["Express", "PostgreSQL", "CRUD", "Middlewares"],
     icon: "database",
     repoUrl: "https://github.com/Maticode95/Tienda-de-joyas-Mati",
@@ -58,7 +58,7 @@ const projects = [
     title: "Pizzería Mamma Mía",
     kicker: "Frontend React",
     description:
-      "Aplicación React con navegación, carrito, contexto global y rutas protegidas para login/perfil. Sirve para mostrar manejo de estado, experiencia de usuario y estructura de SPA.",
+      "SPA en React para un flujo e-commerce. Muestra navegación con rutas, carrito, Context API, pantallas protegidas y organización de componentes dentro de una experiencia de usuario completa.",
     tags: ["React", "React Router", "Context API", "Vite"],
     icon: "local_pizza",
     repoUrl: "https://github.com/Maticode95/Hito-8--JWT-Mati",
@@ -67,7 +67,7 @@ const projects = [
     title: "Cafetería Nanacao API",
     kicker: "Testing de API",
     description:
-      "API REST pequeña pero valiosa para entrevistas porque incluye pruebas automatizadas con Jest y Supertest. Demuestra que no solo construyes endpoints: también validas comportamiento.",
+      "API REST con pruebas automatizadas. Le permite a un evaluador revisar hábitos de validación, cobertura de endpoints críticos y uso de Jest/Supertest para comprobar comportamiento esperado.",
     tags: ["Express", "Jest", "Supertest", "REST API"],
     icon: "science",
     repoUrl: "https://github.com/Maticode95/Cafeteria-Nanacao-API-REST",
@@ -250,7 +250,7 @@ function Projects() {
       <SectionTitle
         eyebrow="03."
         title="Proyectos"
-        description="Proyectos pensados para contar una historia clara en entrevistas: qué problema resuelven, qué stack usan y qué criterio técnico demuestran."
+        description="Una selección de repos reales para evaluar fundamentos full stack: autenticación, APIs REST, PostgreSQL, React, rutas protegidas, estado global y testing."
       />
       <div className="project-grid">
         {projects.map((project, index) => (
